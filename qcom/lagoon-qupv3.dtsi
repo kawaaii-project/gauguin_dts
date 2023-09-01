@@ -49,7 +49,7 @@
 		status = "ok";
 	};
 
-	/*qupv3_se0_i2c: i2c@880000 {
+	qupv3_se0_i2c: i2c@880000 {
 		compatible = "qcom,i2c-geni";
 		reg = <0x880000 0x4000>;
 		interrupts = <GIC_SPI 601 IRQ_TYPE_LEVEL_HIGH>;
@@ -67,7 +67,7 @@
 		pinctrl-1 = <&qupv3_se0_i2c_sleep>;
 		qcom,wrapper-core = <&qupv3_0>;
 		status = "disabled";
-	};*/
+	};
 
 	qupv3_se0_spi: spi@880000 {
 		compatible = "qcom,spi-geni";
@@ -303,7 +303,7 @@
 		pinctrl-1 = <&qupv3_se9_2uart_sleep>;
 		interrupts = <GIC_SPI 356 IRQ_TYPE_LEVEL_HIGH>;
 		qcom,wrapper-core = <&qupv3_1>;
-		status = "disabled";
+		status = "ok";
 	};
 
 	qupv3_se10_i2c: i2c@990000 {
