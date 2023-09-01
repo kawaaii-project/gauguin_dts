@@ -9,20 +9,6 @@
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
 #include <dt-bindings/iio/qcom,spmi-vadc.h>
 
-&dsi_panel_pwr_supply_labibb {
-	qcom,panel-supply-entry@0 {
-		qcom,supply-min-voltage = <1896000>;
-		qcom,supply-max-voltage = <1896000>;
-		qcom,supply-post-on-sleep = <1>;
-		qcom,supply-post-off-sleep = <20>;
-		qcom,supply-pre-off-sleep = <5>;
-	};
-
-	qcom,panel-supply-entry@2 {
-		qcom,supply-post-on-sleep = <10>;
-	};
-};
-
 &pm6150a_amoled {
 	status = "disabled";
 };
